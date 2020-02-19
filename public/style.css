@@ -1,0 +1,132 @@
+html {
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0.04em;
+  color: rgb(49, 48, 48);
+  line-height: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #e7ecf3; }
+
+.inner {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 28px;
+  background: #e7ecf3;
+  box-shadow:  9px 9px 18px #c3c7cd, -9px -9px 18px #fdffff;
+
+}
+  @media all and (max-width: 900px) {
+    .inner {
+      padding: 1rem;
+      margin: 0 auto;
+     }
+  }
+
+
+.button {
+  margin: 15px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 21px;
+  background: linear-gradient(315deg, #f0f5fd, #dfe3e9);
+  box-shadow:  -5px -5px 5px #c7ccd2, 5px 5px 5px #f7f7f7;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-radius: 21px;
+  background: #e0e5ec;
+  box-shadow: inset 5px 5px 5px #c7ccd2, inset -5px -5px 5px #f9feff;
+}
+
+
+.interval {
+  border-radius: 28px;
+  background: #e0e5ec;
+  box-shadow: inset 5px 5px 9px #c3c7cd, 
+            inset -5px -5px 9px #fdffff;
+  border: none;
+  padding: 15px;
+  min-width: 200px;
+
+}
+
+.logs {
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 28px;
+  background: #e0e5ec;
+  box-shadow: inset 9px 9px 18px #c3c7cd, inset -9px -9px 18px #fdffff;
+  margin: 20px auto 0;
+  padding: 10px;
+  line-height: normal;
+}
+
+/*Mozilla*/
+.logs {
+  scrollbar-width: thin;
+}
+
+/*Chrome*/
+.logs::-webkit-scrollbar {
+	width: 6px;
+	background-color: #FCFCFC;
+}
+
+.logs::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 4px;
+}
+
+.logs::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+
+/*Input styles*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+input {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0.04em;
+  color: rgb(49, 48, 48);
+  cursor: pointer;
+}
+
+#start {
+  font-weight: bold;
+  color: green;
+}
+
+#stop {
+  font-weight: bold;
+  color: red;
+}
+
+#clear {
+  font-weight: bold;
+  color: blue;
+}

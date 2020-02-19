@@ -1,0 +1,7 @@
+extends home
+
+block errors
+  .inner
+    h2= status
+    p= message
+  pre.error!= stackHighlighted

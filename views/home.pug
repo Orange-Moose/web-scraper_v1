@@ -1,0 +1,27 @@
+include mixins/_logs
+
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel="stylesheet", href="/style.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Titillium+Web:300&display=swap")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    .inner
+      block controls
+        .controls
+          h1= `${title}`
+          button#start.button(type="button") START
+          button#stop.button(type="button") STOP
+        input.interval(type="number" name="interval" placeholder="Miliseconds")
+      block errors
+      block logs
+        +logs()
+
+
+    block scripts
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js")
+      script(src="/script.js" type="module")
+      
+      
